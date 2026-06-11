@@ -1,5 +1,7 @@
 # 🔨 mlforge
 
+![mlforge demo](assets/mlforge-demo.gif)
+
 > "LLMs are exceptionally good at looping until they meet specific goals... Don't tell it what to do, give it success criteria and watch it go." — Andrej Karpathy
 
 ML engineering has a dirty secret: most of the waste isn't in the models, it's in the process. The wrong problem gets modeled well. Experiments run without a written hypothesis, so nobody can say what was learned. A single-seed "win" becomes a launch decision. A model ships because the aggregate looked good, and three weeks later someone discovers it broke every new user. Production degrades, and the fix is "retrain it" — no diagnosis, no root cause, the same incident scheduled for next quarter.
