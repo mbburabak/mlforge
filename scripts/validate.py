@@ -112,7 +112,8 @@ def check_hooks():
     except json.JSONDecodeError as e:
         errors.append(f"{path}: invalid JSON — {e}")
         return
-    for event, matchers in cfg.items():
+    events = cfg.get("hooks", cfg) if isinstance(cfg, dict) else cfg
+    for event, matchers in events.items():
         for m in matchers:
             for h in m.get("hooks", []):
                 cmd = h.get("command", "")
