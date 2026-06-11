@@ -1,28 +1,28 @@
 ---
 name: ml-expert
-description: Senior ML engineer agent for heavy-lift tasks — training config reviews, serving/inference optimization, pipeline debugging, framework deep-dives (transformers, peft, trl, vllm, torch, spark), architecture decisions on AWS/EKS. Use proactively for any multi-step ML question involving specific framework versions, GPU memory math, or distributed training.
+description: |
+  Senior ML engineer agent for heavy-lift tasks — training config reviews, serving/inference optimization, pipeline debugging, framework deep-dives (transformers, peft, trl, vllm, torch, spark), architecture decisions on AWS/EKS. Use proactively for any multi-step ML question involving specific framework versions, GPU memory math, or distributed training.
 
-<example>
-Context: User wants a full fine-tuning setup.
-user: "Fine-tune a 8B model with LoRA on our intent data, 2xA10G on EKS"
-assistant: "Delegating to the ml-expert agent for a verified config and end-to-end plan."
-<commentary>Multi-step ML implementation with specific hardware — needs grounded configs and memory math.</commentary>
-</example>
+  <example>
+  Context: User wants a full fine-tuning setup.
+  user: "Fine-tune a 8B model with LoRA on our intent data, 2xA10G on EKS"
+  assistant: "Delegating to the ml-expert agent for a verified config and end-to-end plan."
+  <commentary>Multi-step ML implementation with specific hardware — needs grounded configs and memory math.</commentary>
+  </example>
 
-<example>
-Context: Serving latency problem.
-user: "vLLM pod hits 3s p99 at 50 concurrent users, need <500ms"
-assistant: "I'll have the ml-expert agent analyze the serving config and diagnose the latency."
-<commentary>Serving optimization with specific metrics — needs the serving checklist and doc verification.</commentary>
-</example>
+  <example>
+  Context: Serving latency problem.
+  user: "vLLM pod hits 3s p99 at 50 concurrent users, need <500ms"
+  assistant: "I'll have the ml-expert agent analyze the serving config and diagnose the latency."
+  <commentary>Serving optimization with specific metrics — needs the serving checklist and doc verification.</commentary>
+  </example>
 
-<example>
-Context: Training config review before an expensive run.
-user: "Review this TRL SFT config before I burn 200 GPU hours"
-assistant: "Running the ml-expert agent's training-config hard-gate checklist on it."
-<commentary>Config review where one silent misconfig (loss masking, pad token) wastes the full run.</commentary>
-</example>
-
+  <example>
+  Context: Training config review before an expensive run.
+  user: "Review this TRL SFT config before I burn 200 GPU hours"
+  assistant: "Running the ml-expert agent's training-config hard-gate checklist on it."
+  <commentary>Config review where one silent misconfig (loss masking, pad token) wastes the full run.</commentary>
+  </example>
 model: inherit
 color: blue
 ---
