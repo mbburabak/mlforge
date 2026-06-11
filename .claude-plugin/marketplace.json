@@ -1,0 +1,23 @@
+{
+  "name": "mlforge-tools",
+  "owner": {
+    "name": "Mert Burabak",
+    "email": "mbburabak@gmail.com"
+  },
+  "description": "Principal/staff-level ML engineering plugins — AWS (EKS/ECS), behavioral and NLP problems.",
+  "plugins": [
+    {
+      "name": "mlforge",
+      "source": "./",
+      "description": "End-to-end ML engineering sprint system: FRAME → PLAN → EXPERIMENT → EVALUATE → SHIP → MONITOR → LEARN. 19 skills + an agent connected by an artifact pipeline and gate ledger, with iron-law rigor and token-efficient output.",
+      "version": "0.4.0",
+      "author": {
+        "name": "Mert Burabak"
+      },
+      "license": "MIT",
+      "category": "engineering",
+      "keywords": ["machine-learning", "nlp", "mlops", "aws", "llm", "experimentation"],
+      "tags": ["ml", "nlp", "aws", "eks", "llm", "experimentation", "mlops"]
+    }
+  ]
+}

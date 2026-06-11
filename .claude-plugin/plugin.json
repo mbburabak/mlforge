@@ -1,0 +1,9 @@
+{
+  "name": "mlforge",
+  "version": "0.4.0",
+  "description": "End-to-end ML engineering sprint system for principal/staff-level engineers: FRAME → PLAN → EXPERIMENT → EVALUATE → SHIP → MONITOR → LEARN. 19 skills + ml-expert agent connected by an artifact pipeline and gate ledger — problem framing, system design, experiment pre-registration, evaluation, release gates, canary boomerangs, retros, and compounding lessons. Tuned for AWS (EKS/ECS), behavioral and NLP problems.",
+  "author": {
+    "name": "Mert Burabak"
+  },
+  "keywords": ["machine-learning", "nlp", "mlops", "aws", "llm", "experimentation"]
+}
